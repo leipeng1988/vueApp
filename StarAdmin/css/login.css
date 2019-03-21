@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"微软雅黑",Arial;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+img{
+    border:none;
+}
+body{
+    background: url("../img/login_1.jpg") no-repeat;
+    background-size:cover;
+}
+.bigbox{
+    width: 100%;
+    box-sizing: border-box;
+    padding:2% 3%;
+}
+form{
+    width: 100%;
+    box-sizing: border-box;
+    padding:25px 38px;
+    background: #fff;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+form p{
+    font-size: 14px;
+    color:#3a3d3d;
+    padding:15px 10px;
+}
+form p:last-child{
+    font-size: 12px;
+}
+.user_txt{
+    border: 1px solid #f3f3f3;
+    border-radius: 8px;
+}
+form .icon-winfo-icon-zhengque-yuanquan{
+    color:#cbcbcb;
+    float: right;
+}
+form input{
+    color:#d8d6d3;
+    font-size: 14px;
+    text-indent: 5px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+form p .zhuce{
+    float: right;
+    color: #cbcbcb;
+}
+form .zhuce:hover{
+    text-decoration: underline;
+    color: #0056b3;
+}
+.btn{
+    margin:4% 0;
+    color: #fff;
+    text-align: center;
+    background: #308ee0;
+    border-radius: 4px;
+}
+.checbox{
+    display: -webkit-flex;
+    background: url(../img/dui.jpg) left center no-repeat ;
+}
+.checbok_box{
+    vertical-align: middle;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity:0;
+    opacity: 0;
+    vertical-align: middle;
+}
+/*.checbox span{*/
+    /*float: right;*/
+/*}*/
+.go{
+    text-align: center;
+}
+.go a{
+    color:#3a3d3d;
+    font-weight: 600;
+}
+footer p{
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color:#7e8082;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    color:#7e8082;
+}
+/*响应式*/
+@media screen and (min-width: 990px){
+    .bigbox form{
+        width:33.3%;
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

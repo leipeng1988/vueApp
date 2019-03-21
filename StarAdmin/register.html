@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<div class="bigbox">
+
+    <div class="center">
+        <h2>Register</h2>
+        <form>
+            <p class="user_txt"><input type="text" placeholder="Username"><i class="iconfont icon-winfo-icon-zhengque-yuanquan"></i></p>
+            <p class="user_txt user_pas"><input type="password" placeholder="Password"><i class="iconfont icon-winfo-icon-zhengque-yuanquan"></i></p>
+            <p class="user_txt"><input type="password" placeholder="Confirm Password"><i class="iconfont icon-winfo-icon-zhengque-yuanquan"></i></p>
+            <p class="checbox"><input type="checkbox" checked class="checbok_box">I argree to the terms</p>
+            <p class="btn"><input type="button">Register</p>
+            <!--<p class="user_txt go"><a href="login.html">Login</a></p>-->
+            <p>Already have and account?<a href="login.html" class="zhuce">Login</a></p>
+        </form>
+        <footer>
+            <p>
+                <a href="##">Conditions&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                <a href="##">Help&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                <a href="##">Tems</a>
+            </p>
+            <p>copyright &copy; 2018 Bootstrqpdsh. All rights reserved</p>
+        </footer>
+    </div>
+
+</div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.js"></script>
+<script>
+    $(function () {
+        var flag = 1;
+        $(".checbox").click(function () {
+            if(flag == 1){
+                $(".checbox").css({"backgroundImage":"url(img/dui.jpg)"});
+                flag = 0;
+            }else{
+                $(".checbox").css({"backgroundImage":"url(img/checkbox.jpg)"});
+                flag = 1;
+            }
+        })
+    })
+
+</script>

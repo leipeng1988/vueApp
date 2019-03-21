@@ -1,0 +1,22 @@
+
+
+.echart{
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 0 ;
+}
+.echart li{
+    width:49%;
+    background: #fff;
+    height: 300px;
+    margin-bottom: 2%;
+}
+
+/*响应*/
+@media screen and (max-width: 990px) {
+     .echart li{
+         width: 100%;
+     }
+}
+

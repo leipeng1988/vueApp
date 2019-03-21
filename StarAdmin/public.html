@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公共</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/public2.css">
+</head>
+<body>
+<!--导航-->
+<nav>
+    <div class="logo">
+        <a class="logo_a" href="index.html"><img src="img/logo.jpg" alt=""></a>
+        <a class="xixi" href="index.html"><img src="img/xixi.jpg" alt=""></a>
+    </div>
+    <div class="nav_right">
+        <div class="user_left">
+            <a href="##" class="nav_a nav_b"> Schedule<img src="img/new.jpg"/></a>
+            <a href="##" class="nav_a nav_c"><i class="iconfont icon-zhexian"></i>&nbsp;&nbsp;Reports</a>
+            <a href="##" class="nav_a nav_d"><i class="iconfont icon-bookmark"></i>&nbsp;&nbsp;Score</a>
+        </div>
+        <ul class="user">
+            <li><a href="##" class="wenj"><i class="iconfont icon-suoyouwenjian"></i><span >7</span></a></li>
+            <li><a href="##" class="tix"><i class="iconfont icon-lingdang"></i> <span>4</span></a></li>
+            <li class="lis_hidden">
+                <p>Hello,Richars V.Welsh!</p>
+                <img src="img/face1.jpg" alt="">
+                <i class="iconfont icon-xiajiantou-copy"></i>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="center">
+    <!--侧边栏-->
+    <!--侧边栏-->
+    <ul class="aside">
+        <li class="side_head side_user">
+            <p class="user_img">
+                <img src="img/face1.jpg" alt="">
+            </p>
+            <div class="username">
+                <p>Richard V.Welsh</p>
+                <p>Manager <i class="iconfont icon-yuanxing"></i></p>
+            </div>
+        </li>
+        <li class="side_head side_new">
+            <p class="list">
+                New Project +
+            </p>
+        </li>
+        <li class="side_head side_new side_li">
+            <a href="index.html" class="list side_nav" >
+                <i class="iconfont icon-31"></i>
+                Dashboard
+            </a>
+        </li>
+        <li class="side_head side_new side_li side_click">
+            <a href="##" class="list side_nav side_list">
+                <i class="iconfont icon-suoyouwenjian"></i>Dashboard<i class="iconfont icon-mjiantou-copy1"></i>
+            </a>
+            <ul class="list_menu">
+                <li class="list_item"><a href="##">Buttons</a></li>
+                <li class="list_item"><a href="typography.html">Typography</a></li>
+            </ul>
+        </li>
+        <li class="side_head side_new side_li">
+            <a href="elements.html" class="list side_nav side_list">
+                <i class="iconfont icon-huanyipi"></i>Form elements
+            </a>
+        </li>
+        <li class="side_head side_new side_li">
+            <a href="chart.html" class="list side_nav side_list">
+                <i class="iconfont icon-zhexian"></i>Charts
+            </a>
+        </li>
+        <li class="side_head side_new side_li">
+            <a href="table.html" class="list side_nav side_list">
+                <i class="iconfont icon-table"></i>Tbales
+            </a>
+        </li>
+        <li class="side_head side_new side_li side_click">
+            <a href="##" class="list side_nav side_list">
+                <i class="iconfont icon-shuaxin1"></i>User Pages<i class="iconfont icon2 icon-mjiantou-copy1"></i>
+            </a>
+            <ul class="list_menu">
+                <li class="list_item"><a href="##">Blanl Page</a></li>
+                <li class="list_item"><a href="login.html">Login</a></li>
+                <li class="list_item"><a href="register.html">Register</a></li>
+                <li class="list_item"><a href="404.html">404</a></li>
+                <li class="list_item"><a href="505.html">505</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!--右侧-->
+    <div class="center_right">
+
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.js"></script>
+<script>
+    $(function () {
+        $(".side_click").each(function() {
+            $(this).click(function () {
+                $(".list_menu").slideToggle();
+            })
+        })
+    })
+</script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="bigbox">
+        <form>
+            <p>Username</p>
+            <p class="user_txt"><input type="text" placeholder="Username"><i class="iconfont icon-winfo-icon-zhengque-yuanquan"></i></p>
+            <p>Password</p>
+            <p class="user_txt"><input type="password" placeholder="*********"><i class="iconfont icon-winfo-icon-zhengque-yuanquan"></i></p>
+            <p class="btn"><input type="button">Login</p>
+            <p class="checbox"><input type="checkbox" checked class="checbok_box">Keep me signed in<a href="##" class="zhuce" style="float:right">Forgot Password</a></p>
+            <p class="user_txt go"><a href="##">Log in with Google</a></p>
+            <p>Not a member? <a href="register.html" class="zhuce">Create new account</a></p>
+        </form>
+        <footer>
+            <p>
+                <a href="##">Conditions&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                <a href="##">Help&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                <a href="##">Tems</a>
+            </p>
+            <p>copyright &copy; 2018 Bootstrqpdsh. All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.js"></script>
+<script>
+    $(function () {
+        var flag = 1;
+        $(".checbox").click(function () {
+            if(flag == 1){
+                $(".checbox").css({"backgroundImage":"url(img/dui.jpg)"});
+                flag = 0;
+            }else{
+                $(".checbox").css({"backgroundImage":"url(img/checkbox.jpg)"});
+                flag = 1;
+            }
+        })
+    })
+
+</script>

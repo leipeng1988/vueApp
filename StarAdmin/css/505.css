@@ -1,0 +1,18 @@
+.sorry h1{
+    font-size: 80px;
+    border-right: 3px solid #a081e6;
+    padding-right: 5%;
+    margin-right:5%;
+}
+@media screen and (max-width: 990px) {
+    .box{
+        width: 50%;
+        text-align: center;
+    }
+    .sorry{
+        display: block;
+    }
+    .sorry h1{
+        border:none;
+    }
+}

@@ -1,0 +1,169 @@
+
+
+/*head*/
+.head{
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 0 ;
+}
+.head_a{
+    width: 44.5%;
+    padding:2% 2%;
+    background: #fff;
+    color:#212529;
+}
+.head_a .h_h4,.head_top .h_h4, .head_bottom .h_h4{
+    padding:3%;
+    font-weight: 400;
+}
+.head_a p ,.head_top p,.head_bottom p{
+    padding:2%;
+    font-size:12px;
+    color: #212529;
+}
+.head_a span,.head_top span,.head_bottom .col{
+    color:#e93e8c;
+}
+.hea{
+    font-weight: 600;
+    border-top:2px solid #f2f2f2;
+    padding: 2% 0;
+}
+.head_a .spn{
+    color:#c2c2c2;
+    font-size: 10px;
+    font-weight: 300;
+}
+/*display*/
+.dis_and_par{
+    margin-top:3%;
+    color:#212529;
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 0 ;
+}
+.head_top{
+    padding: 5% 4%;
+    background: #fff;
+}
+.head_bottom{
+    background: #fff;
+    padding: 5% 4%;
+    margin-top:7%;
+}
+.head_b h1{
+    font-size: 46px;
+}
+.head_b h2{
+    font-size: 38px;
+}
+.head_b h3{
+    font-size: 30px;
+}
+.head_b h4{
+    font-size: 24px;
+}
+.dis{
+    font-weight: 400;
+}
+.icon_box{
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yellow{
+    font-size: 38px;
+    color:#ffaf00;
+}
+.green{
+    font-size: 26px;
+    color:#00ce68;
+
+}
+.red{
+    font-size: 20px;
+    color:#e65251;
+}
+/*address*/
+.address{
+    margin-top:3%;
+}
+.head_a .lorem{
+    padding:2%;
+    border:1px solid #f2f2f2;
+    margin-top:10%;
+    margin-bottom: 20%;
+}
+.blue_box{
+    border:1px solid deepskyblue;
+}
+.head_a .blue_box .some{
+    font-size: 14px;
+    line-height: 50px;
+    color:deepskyblue;;
+}
+.head_a .right{
+    color:skyblue;
+    font-weight: 400;
+}
+.media{
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-hulianwang1{
+    font-size:20px;
+    color:#8f62e0;
+    margin-right:6px;
+}
+.head_a .media .cras{
+    font-size: 12px;
+    color: #212529;
+}
+.head_b{
+    width: 27.5%;
+}
+.list_item{
+    margin-left:4%;
+}
+
+.list_item li{
+    list-style: disc;
+    font-size:12px;
+    line-height: 20px;
+    color: #212529;
+}
+ .list_item_b li{
+    font-size:12px;
+    line-height: 20px;
+    color: #212529;
+    list-style-type: decimal;
+}
+
+
+
+
+
+/*响应式*/
+@media screen and (max-width: 766px) {
+    .head li{
+        width: 100%;
+    }
+    .head_a{
+        width:100%;
+        margin-top:3%;
+    }
+}
+
+
+
+
+
+
+
+
+
+

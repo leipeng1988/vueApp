@@ -1,0 +1,70 @@
+
+@charset "utf-8";
+/* CSS Document */
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+img{
+    border:none;
+}
+body{
+    height: 100%;
+    /*display:flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    background: #308ee0;
+}
+.box{
+    position: absolute;
+    left: 30%;
+    top:30%;
+    width:36%;
+    color:#fff;
+}
+
+.sorry{
+    display: -webkit-flex;
+}
+.sorry h1{
+    font-size: 80px;
+    border-right: 3px solid #59a5e6;
+    padding-right: 5%;
+    margin-right:5%;
+}
+.sorry_a h2{
+    font-size:46px;
+}
+.back{
+    text-align: center;
+}
+.back a{
+    color:#fff;
+    line-height: 100px;
+}
+.back a:hover{
+    text-decoration: underline;
+}
+.back p{
+    font-size: 10px;
+    font-weight: 600;
+}
+/*------------------------------*/
+@media screen and (max-width: 990px) {
+    .box{
+        width: 50%;
+        text-align: center;
+    }
+    .sorry{
+        display: block;
+    }
+    .sorry h1{
+        border:none;
+    }
+}

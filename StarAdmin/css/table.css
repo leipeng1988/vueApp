@@ -1,0 +1,129 @@
+
+table{
+    border-collapse: collapse;
+}
+.basic_table{
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /*flex-shrink: 0;*/
+}
+.basic{
+    width: 42.5%;
+    background: #fff;
+    padding:3%;
+    color:#383b3f;
+}
+.basic p{
+    font-size: 12px;
+    padding:2%;
+}
+.basic span{
+    color:#e93e8c;
+}
+.basic h4{
+    padding:2%;
+    font-size:14px;
+    font-weight: 400;
+    color: #404852;
+}
+.table_scroll{
+    width: 100%;
+    overflow-x: auto;
+    font-size: 12px;
+}
+.add_table_aa td:nth-of-type(3) .tiao_color{
+    width: 80%;
+    background: #e9ecef;
+    border-radius: 4px;
+}
+.add_table_aa td:nth-of-type(3) .tiao_color div{
+    width: 20%;
+    height: 6px;
+    background: #26d57f;
+    border-radius: 4px;
+}
+
+.add_table{
+    width: 120%;
+}
+.add_table td{
+    padding:2%;
+    font-size: 13px;
+    white-space: nowrap;
+    border-top: 1px solid #f2f2f2;
+}
+.txt span{
+    font-size: 10px;
+    padding:2%;
+    font-weight: 600;
+    color:#fff;
+    border-radius: 3px;
+    background: #e65251;
+}
+.striped_table{
+    width: 100%;
+    margin-top:2%;
+}
+.add_class{
+    width: 100%;
+}
+.add_class img{
+    padding: 1%;
+}
+.striped tr:nth-of-type(1) td{
+    padding:2%;
+}
+.striped tr:nth-of-type(2n){
+    background: #f2f8f9;
+}
+.striped td{
+    padding: 1%;
+    border-top:none;
+}
+.bordered{
+    border: 1px solid #f2f2f2;
+}
+.table_scroll .bordered  td{
+    border: 1px solid #f2f2f2;
+}
+
+.inverse{
+    color:#fff;
+}
+.inverse tr{
+    background: #212529;
+}
+.inverse td{
+    border-bottom:#32383e;
+}
+.contextual tr:nth-of-type(2){
+    background: #ded3f6;
+}
+.contextual tr:nth-of-type(3){
+    background: #ffe9b8;
+}
+.contextual tr:nth-of-type(4){
+    background: #f8cfce;
+}
+.contextual tr:nth-of-type(5){
+    background: #b8f1d5;
+}
+.contextual tr:nth-of-type(6){
+    background: #c5dff6;
+}
+
+
+/*---------------------------------------------*/
+@media screen and (max-width: 990px){
+    .basic{
+        width: 100%;
+    }
+    .basic_scroll{
+        margin-top:3%;
+    }
+    .add_table{
+        width: 100%;
+    }
+}

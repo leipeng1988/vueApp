@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chartjs</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/chart.css">
+</head>
+<body>
+<!--导航-->
+<nav>
+    <div class="logo">
+        <a href="##"><img src="img/logo.jpg" alt=""></a>
+        <a href="index.html"><img src="img/xixi.jpg" alt=""></a>
+    </div>
+    <div class="nav_right">
+        <div class="user_left">
+            <a href="##" class="nav_a nav_b"> Schedule<img src="img/new.jpg"/></a>
+            <a href="##" class="nav_a nav_c"><i class="iconfont icon-zhexian"></i>&nbsp;&nbsp;Reports</a>
+            <a href="##" class="nav_a nav_d"><i class="iconfont icon-bookmark"></i>&nbsp;&nbsp;Score</a>
+        </div>
+        <ul class="user">
+            <li><a href="##" class="wenj"><i class="iconfont icon-suoyouwenjian"></i><span >7</span></a></li>
+            <li><a href="##" class="tix"><i class="iconfont icon-lingdang1"></i> <span>4</span></a></li>
+            <li class="lis_hidden">
+                <p>Hello,Richars V.Welsh!</p>
+                <img src="img/face1.jpg" alt="">
+                <i class="iconfont icon-xiajiantou-copy"></i>
+            </li>
+            <li class="lis_shezhi">
+                <a class="shezhi_a" href="##"><img src="img/shezhi.jpg" alt=""></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="center">
+    <!--侧边栏-->
+    <ul class="aside">
+        <li class="side_head side_user">
+            <p class="user_img">
+                <img src="img/face1.jpg" alt="">
+            </p>
+            <div class="username">
+                <p>Richard V.Welsh</p>
+                <p>Manager <i class="iconfont icon-yuanxing"></i></p>
+            </div>
+        </li>
+        <li class="side_head side_new">
+            <p class="list">
+                New Project +
+            </p>
+        </li>
+        <li class="side_head side_new side_li">
+            <a href="index.html" class="list side_nav" >
+                <i class="iconfont icon-31"></i>
+                Dashboard
+            </a>
+        </li>
+        <li class="side_head side_new side_li side_click">
+            <a href="##" class="list side_nav side_list">
+                <i class="iconfont icon-suoyouwenjian"></i>Dashboard<i class="iconfont icon1 icon-mjiantou-copy1"></i>
+            </a>
+            <ul class="list_menu">
+                <li class="list_item"><a href="buttons.html">Buttons</a></li>
+                <li class="list_item"><a href="typography.html">Typography</a></li>
+            </ul>
+        </li>
+        <li class="side_head side_new side_li">
+            <a href="elements.html" class="list side_nav side_list">
+                <i class="iconfont icon-huanyipi"></i>Form elements
+            </a>
+        </li>
+        <li class="side_head side_new side_li">
+            <a href="chart.html" class="list side_nav side_list">
+                <i class="iconfont icon-zhexian"></i>Charts
+            </a>
+        </li>
+        <li class="side_head side_new side_li">
+            <a href="table.html" class="list side_nav side_list">
+                <i class="iconfont icon-table"></i>Tbales
+            </a>
+        </li>
+        <li class="side_head side_new side_li side_click2">
+            <a href="##" class="list side_nav side_list">
+                <i class="iconfont icon-shuaxin1"></i>User Pages<i class="iconfont icon2 icon-mjiantou-copy1"></i>
+            </a>
+            <ul class="list_menu2">
+                <li class="list_item"><a href="##">Blanl Page</a></li>
+                <li class="list_item"><a href="login.html">Login</a></li>
+                <li class="list_item"><a href="register.html">Register</a></li>
+                <li class="list_item"><a href="404.html">404</a></li>
+                <li class="list_item"><a href="505.html">505</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!--右侧-->
+    <div class="center_right">
+        <ul class="echart">
+            <li id="zhexian"></li>
+            <li id="bar"></li>
+            <li id="area"></li>
+            <li id="doughnut"></li>
+            <li id="pie"></li>
+            <li id="scatter"></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/charts.js"></script>
+<script>
+    //侧边栏
+    $(".side_click").click(function () {
+        $(".list_menu").slideToggle();
+        $(".side_list i").removeClass("icon-mjiantou-copy1");
+        $(".side_list i").addClass("icon-mjiantou-copy1-copy");
+    })
+
+    $(".side_click2").click(function () {
+        $(".list_menu2").slideToggle();
+        $(".side_list .icon2").removeClass("icon-mjiantou-copy1");
+        $(".side_list .icon2").addClass("icon-mjiantou-copy1-copy");
+    })
+    $(function () {
+        line();
+        bar();
+        area();
+        doughnut();
+        pie();
+        san();
+    })
+    //点击出现侧边栏
+    $(".shezhi_a").click(function () {
+        $(".aside").toggle();
+        $(".aside").css({"z-index":"100"});
+    })
+    //点击箭头
+    $(".side_click").click(function () {
+        $(".list_menu").toggle();
+        $(".side_list i").removeClass("icon-mjiantou-copy1");
+        $(".side_list i").addClass("icon-mjiantou-copy1-copy");
+    })
+
+    $(".side_click2").click(function () {
+        $(".list_menu2").toggle();
+        $(".side_list i").removeClass("icon-mjiantou-copy1");
+        $(".side_list i").addClass("icon-mjiantou-copy1-copy");
+    })
+</script>
